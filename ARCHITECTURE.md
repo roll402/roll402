@@ -48,3 +48,58 @@ function deriveResult(txSignature: string, max: number): number {
 This is deterministic — given the same signature, the result is always the same. The signature is not known until the transaction is confirmed on-chain, making it impossible to predict before payment.
 
 **Limitation**: This is client-side. A malicious frontend could theoretically show a different result than what the hash dictates. Provably fair upgrade: Switchboard VRF (see `SECURITY.md`).
+
+## Component structure
+
+```
+app/
+  page.tsx              — assembles all sections
+  layout.tsx            — metadata, fonts, wallet provider
+  globals.css           — CSS variables, keyframes
+  opengraph-image.tsx   — dynamic OG image generation
+
+components/
+  layout/
+    Header.tsx          — fixed nav with wallet connect
+    Footer.tsx          — minimal two-row footer
+    BackgroundFX.tsx    — shader-based volumetric background
+    Preloader.tsx       — initial loading screen
+  sections/
+    Hero.tsx            — hero with two-column layout (text + game)
+    HowItWorks.tsx      — three step cards
+    Mechanism.tsx       — x402 explanation + HTTP terminal
+    Economy.tsx         — live x402 economy stats
+    Lore.tsx            — history + tabbed HTTP transcript
+  game/
+    GameCard.tsx        — game container with all controls
+    NumberPicker.tsx    — number input (1-402) + shuffle
+    FlipButton.tsx      — primary CTA with phase states
+    RollReveal.tsx      — slot-machine reveal animation
+    LiveActivity.tsx    — pseudo x402 network feed
+    RecentFlips.tsx     — history list with Solscan links
+    WinBurst.tsx        — win celebration overlay
+  motion/
+    ScrollReveal.tsx    — bidirectional scroll animations
+
+hooks/
+  useFlip.ts            — roll logic, phase machine, result derivation
+  useFlipHistory.ts     — localStorage-backed history
+  useVisibilityPause.ts — tab visibility pause for animations
+  useIsMobile.ts        — responsive breakpoint hook
+
+lib/
+  constants.ts          — FLIP_SOL, MODE, DESTINATION_ADDRESS
+  solana.ts             — connection + send roll transaction helper
+  random.ts             — rolling logic
+  cn.ts                 — clsx + tailwind-merge helper
+```
+
+## Key design decisions
+
+**No backend**: Keeps the project simple and trustless. Payment goes directly on-chain. No server can intercept or manipulate funds.
+
+**Single mode**: Only x402 Roll (1 in 402). Keeps the narrative focused. The number 402 IS the product.
+
+**Client-side random**: Acceptable for a community experiment. Auditable by anyone — the derivation code is open source and the input (tx signature) is on-chain.
+
+**Fixed SOL stake**: Everyone pays exactly 0.005 SOL — no dynamic USD conversion, no oracle dependency, no slippage between display and signature.
