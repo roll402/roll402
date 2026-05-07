@@ -28,11 +28,29 @@ Client → GET /api/data
 Server ← 200 OK + data
 ```
 
+## Who's building on x402
+
+- **Coinbase** — protocol spec and reference implementation
+- **Stripe** — fiat-to-x402 bridge (launched February 2026)
+- **Google Cloud** — compute payment infrastructure
+- **Cloudflare** — edge API monetization, co-founded x402 Foundation
+- **Vercel** — deployment infrastructure support
+- **Solana Foundation** — primary chain for micropayments
+
+The x402 Foundation (Coinbase + Cloudflare) now governs the open spec. Members include Google, Visa, AWS, Circle, and Anthropic.
+
 ## Why Solana
 
 x402's average transaction is ~$0.06. On Base (Ethereum L2), gas fees of $0.015 consume 25% of each transaction — unsustainable. On Solana, fees are $0.00025. That's 60x cheaper. This makes true micropayments viable in a way no other chain enables.
 
 Solana processes 400ms finality. For AI agents making thousands of calls per minute, this matters.
+
+## By the numbers
+
+- 100M+ x402 transactions since May 2025
+- $10M+ volume processed
+- 22+ facilitators operating
+- 10,000+ paid API endpoints live
 
 ## Roll402's place in this
 
