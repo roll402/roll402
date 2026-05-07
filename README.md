@@ -24,6 +24,19 @@ Roll402 distills that uncertainty into a game.
 
 ---
 
+## How it works
+
+| Mode | Odds | Payout | Cost |
+|------|------|--------|------|
+| x402 Roll | 1 in 402 | ×380 | 0.005 SOL |
+
+1. Connect your Solana wallet (Phantom, Solflare, MetaMask Snap)
+2. Pick a number from 1 to 402
+3. Pay 0.005 SOL to the protocol
+4. The protocol rolls. You win ×380 or you don't.
+
+---
+
 ## The 402 connection
 
 The number you're rolling against — **402** — is the HTTP status code itself. The payout — **×380** — accounts for the house edge while keeping expected value close to fair.
@@ -31,6 +44,44 @@ The number you're rolling against — **402** — is the HTTP status code itself
 If you hit it, the protocol paid you back. And then some.
 
 One in 402 times, the door opens.
+
+---
+
+## Architecture
+
+- **Frontend**: Next.js 16 (App Router) + TypeScript + Tailwind CSS
+- **Animations**: Framer Motion + Paper Design Shaders
+- **Wallet**: Solana Wallet Adapter (Phantom, Solflare, MetaMask Snap)
+- **Payments**: @solana/web3.js — direct SOL transfer on Solana mainnet
+- **Randomness**: Client-side, seeded from transaction signature hash
+
+### Randomness note
+
+Current implementation uses client-side randomness derived from the confirmed transaction signature. This is deterministic and auditable — the outcome is fixed at the moment of on-chain confirmation.
+
+Upgrade path to provably fair: Switchboard VRF or Pyth Entropy. See `SECURITY.md`.
+
+---
+
+## Run locally
+
+```bash
+git clone https://github.com/roll402/roll402
+cd roll402
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+---
+
+## House edge
+
+There is a house edge. It is documented transparently in `docs/ODDS.md`.
+
+Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. House edge: ~5.5%.
 
 ---
 
