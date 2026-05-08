@@ -30,6 +30,30 @@ EV = −0.000249 SOL per roll
 
 You lose ~0.0002 SOL on average per roll, or about 5% of your stake.
 
+## Variance examples
+
+The 5.47% edge is the long-term average. Short sessions are dominated by variance — most rolls lose, and one hit pays for hundreds.
+
+| Rolls | Expected wins | Probability of at least one win |
+|-------|---------------|---------------------------------|
+| 50    | 0.124         | 11.7% |
+| 100   | 0.249         | 22.0% |
+| 200   | 0.498         | 39.3% |
+| 400   | 0.995         | 63.0% |
+| 1000  | 2.488         | 91.7% |
+| 2000  | 4.975         | 99.3% |
+
+**Translation**: even after 400 rolls (~2 SOL spent), roughly one in three players still hasn't hit. The geometry is brutal. That's the trade-off for a ×380 payout.
+
+## Comparison
+
+| Game | House edge |
+|------|-----------|
+| Roll402 | ~5.5% |
+| Roulette (European) | 2.7% |
+| Roulette (American) | 5.26% |
+| Slots (typical) | 5–15% |
+
 ## Note
 
 These are theoretical odds based on fair randomness. See `SECURITY.md` for notes on the current randomness implementation.
