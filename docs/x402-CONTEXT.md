@@ -52,6 +52,16 @@ Solana processes 400ms finality. For AI agents making thousands of calls per min
 - 22+ facilitators operating
 - 10,000+ paid API endpoints live
 
+## x402 V2 update notes
+
+In April 2026 the x402 Foundation shipped V2 of the spec. The headline changes:
+
+- **`X-Payment-Currencies`** — servers can quote a list of accepted assets (e.g. `SOL,USDC,EURC`) instead of a single hard-coded one. Clients pick.
+- **Streaming receipts** — long-running endpoints (LLM inference, video transcoding) can charge per token/second instead of per request, with mid-stream `X-Payment-Topup` headers.
+- **Facilitator delegation** — a paying client can delegate signing to a facilitator (e.g. wallet provider) without exposing the private key. Useful for agents running in untrusted environments.
+
+V2 is backward-compatible with V1 — a V1 server can ignore the new headers entirely. Roll402 stays on V1 because the model is one transaction per roll; there's nothing to stream.
+
 ## Roll402's place in this
 
 Roll402 is not infrastructure. It's an experiment at the edge of the x402 ecosystem — a human-facing application of the same primitive that AI agents use every second.
