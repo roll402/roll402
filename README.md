@@ -85,6 +85,16 @@ Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. Hou
 
 ---
 
+## Links
+
+- **Site:** [roll402.xyz](https://roll402.xyz)
+- **Twitter:** [@roll402sol](https://x.com/roll402sol)
+- **DexScreener:** coming soon (post-listing)
+- **Streamflow:** vesting schedule will be published on listing day
+- **x402 Foundation:** [x402.org](https://x402.org)
+
+---
+
 ## Disclaimer
 
 Roll402 is a community experiment on the x402 narrative. Not financial advice. Play responsibly.
