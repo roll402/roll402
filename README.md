@@ -35,7 +35,7 @@ Roll402 distills that uncertainty into a game.
 1. Connect your Solana wallet (Phantom, Solflare, MetaMask Snap)
 2. Pick a number from 1 to 402
 3. Pay 0.005 SOL to the protocol
-4. The protocol rolls. You win ×380 or you don't.
+4. The protocol rolls. You win ×380 — or you don't.
 
 ---
 
@@ -51,17 +51,17 @@ One in 402 times, the door opens.
 
 ## Architecture
 
-- **Frontend**: Next.js 16 (App Router) + TypeScript + Tailwind CSS
-- **Animations**: Framer Motion + Paper Design Shaders
-- **Wallet**: Solana Wallet Adapter (Phantom, Solflare, MetaMask Snap)
-- **Payments**: @solana/web3.js — direct SOL transfer on Solana mainnet
-- **Randomness**: Client-side, seeded from transaction signature hash
+- **Frontend:** Next.js 16 (App Router) + TypeScript + Tailwind CSS
+- **Animations:** Framer Motion + Paper Design Shaders
+- **Wallet:** Solana Wallet Adapter (Phantom, Solflare, MetaMask Snap)
+- **Payments:** @solana/web3.js — direct SOL transfer on Solana mainnet
+- **Randomness:** Client-side, seeded from the transaction signature hash
 
 ### Randomness note
 
-Current implementation uses client-side randomness derived from the confirmed transaction signature. This is deterministic and auditable — the outcome is fixed at the moment of on-chain confirmation.
+The current implementation uses client-side randomness derived from the confirmed transaction signature. It is deterministic and auditable — the outcome is fixed at the moment of on-chain confirmation.
 
-Upgrade path to provably fair: Switchboard VRF or Pyth Entropy. See `SECURITY.md`.
+Upgrade path to provably fair: Switchboard VRF or Pyth Entropy. See [`SECURITY.md`](SECURITY.md).
 
 ---
 
@@ -75,15 +75,15 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## House edge
 
-There is a house edge. It is documented transparently in `docs/ODDS.md`.
+There is a house edge. It is documented transparently in [`docs/ODDS.md`](docs/ODDS.md).
 
-Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. House edge: ~5.5%.
+Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. House edge: **~5.5%**.
 
 ---
 

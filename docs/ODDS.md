@@ -8,7 +8,7 @@ Full transparency on the math.
 |-----------|-------|
 | Cost per roll | 0.005 SOL |
 | Win condition | Pick = rolled number (1–402) |
-| Win probability | 1/402 = 0.2488% |
+| Win probability | 1/402 ≈ 0.2488% |
 | Payout on win | 0.005 × 380 = 1.9 SOL |
 | Expected payout | 1.9 × (1/402) = 0.004726 SOL |
 | House edge | (0.005 − 0.004726) / 0.005 = **5.47%** |
@@ -28,7 +28,7 @@ EV = 0.004726 − 0.004975
 EV = −0.000249 SOL per roll
 ```
 
-You lose ~0.0002 SOL on average per roll, or about 5% of your stake.
+You lose ~0.00025 SOL on average per roll, or about 5% of your stake.
 
 ## Variance examples
 
@@ -43,7 +43,7 @@ The 5.47% edge is the long-term average. Short sessions are dominated by varianc
 | 1000  | 2.488         | 91.7% |
 | 2000  | 4.975         | 99.3% |
 
-**Translation**: even after 400 rolls (~2 SOL spent), roughly one in three players still hasn't hit. The geometry is brutal. That's the trade-off for a ×380 payout.
+**Translation:** even after 400 rolls (~2 SOL spent), roughly one in three players still hasn't hit. The geometry is brutal. That's the trade-off for a ×380 payout.
 
 ## Comparison
 
@@ -56,4 +56,4 @@ The 5.47% edge is the long-term average. Short sessions are dominated by varianc
 
 ## Note
 
-These are theoretical odds based on fair randomness. See `SECURITY.md` for notes on the current randomness implementation.
+These are theoretical odds based on fair randomness. See [`SECURITY.md`](../SECURITY.md) for notes on the current randomness implementation.
