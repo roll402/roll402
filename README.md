@@ -1,6 +1,6 @@
 # ROLL402
 
-**Live:** [roll402.xyz](https://roll402.xyz) · **Twitter:** [@roll402sol](https://x.com/roll402sol)
+**Live:** [roll402.xyz](https://roll402.xyz) · **Token:** [<TBD_CA>](https://pump.fun/coin/<TBD_CA>) · **Twitter:** [@roll402sol](https://x.com/roll402sol)
 
 > HTTP 402 — Payment Required.
 > For thirty years, this status code did nothing.
@@ -82,6 +82,15 @@ Open [http://localhost:3000](http://localhost:3000)
 There is a house edge. It is documented transparently in `docs/ODDS.md`.
 
 Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. House edge: ~5.5%.
+
+---
+
+## Token & DEX
+
+- **Token mint (Solana):** `<TBD_CA>`
+- **Buy on Pump.fun:** [pump.fun/coin/<TBD_CA>](https://pump.fun/coin/<TBD_CA>)
+- **Track on DexScreener:** populated automatically after first swap
+- **Payments wallet (protocol):** `BDJP1CSHNQ87jWP1Yfrs84YMXGCrREKwPup99NmRgqeY`
 
 ---
 
