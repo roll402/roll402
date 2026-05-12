@@ -8,6 +8,8 @@
 
 Roll402 is an onchain dice roll experiment built on the x402 payment primitive. Pick a number from 1 to 402. Pay the protocol. Beat the odds.
 
+> Built as an entry for the **Solana x402 Hackathon 2026** — narrative track. The repo, the site, and the token all ship together.
+
 ---
 
 ## What is x402?
