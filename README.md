@@ -89,9 +89,9 @@ Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. Hou
 
 ## Token & DEX
 
-- **Token mint (Solana):** `<TBD_CA>`
-- **Buy on Pump.fun:** [pump.fun/coin/<TBD_CA>](https://pump.fun/coin/<TBD_CA>)
-- **Track on DexScreener:** populated automatically after first swap
+- **Token mint (Solana):** `RoLLS5tvMPC265wjJqiAqbQrPN4tpLznLReH3TVvYp4`
+- **Buy on Pump.fun:** [pump.fun/coin/RoLLS5tvMPC265wjJqiAqbQrPN4tpLznLReH3TVvYp4](https://pump.fun/coin/RoLLS5tvMPC265wjJqiAqbQrPN4tpLznLReH3TVvYp4)
+- **Track on DexScreener:** https://dexscreener.com/solana/4pthq2vzqpmefct9rrgcmkfyhhuijrlu5h6dgn5bjkgy
 - **Payments wallet (protocol):** `BDJP1CSHNQ87jWP1Yfrs84YMXGCrREKwPup99NmRgqeY`
 
 ---
@@ -100,8 +100,8 @@ Short version: expected value per roll is ~0.00472 SOL on a 0.005 SOL stake. Hou
 
 - **Site:** [roll402.xyz](https://roll402.xyz)
 - **Twitter:** [@roll402sol](https://x.com/roll402sol)
-- **DexScreener:** coming soon (post-listing)
-- **Streamflow:** vesting schedule will be published on listing day
+- **DexScreener:** https://dexscreener.com/solana/4pthq2vzqpmefct9rrgcmkfyhhuijrlu5h6dgn5bjkgy
+- **Streamflow:** [https://app.streamflow.finance/contract/solana/mainnet/8g31JyBrK9KyQ6wAY7hpXoSTb7RBVQsBytnVepRmGEUd](https://app.streamflow.finance/contract/solana/mainnet/8g31JyBrK9KyQ6wAY7hpXoSTb7RBVQsBytnVepRmGEUd)
 - **x402 Foundation:** [x402.org](https://x402.org)
 
 ---
