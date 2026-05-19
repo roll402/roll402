@@ -1,6 +1,6 @@
 # ROLL402
 
-**Live:** [roll402.xyz](https://roll402.xyz) · **Token:** [<TBD_CA>](https://pump.fun/coin/<TBD_CA>) · **Twitter:** [@roll402sol](https://x.com/roll402sol)
+**Live:** [roll402.xyz](https://roll402.xyz) · **Token:** [RoLLS5tvMPC265wjJqiAqbQrPN4tpLznLReH3TVvYp4](https://pump.fun/coin/RoLLS5tvMPC265wjJqiAqbQrPN4tpLznLReH3TVvYp4) · **X:** [@roll402sol](https://x.com/roll402sol)
 
 > HTTP 402 — Payment Required.
 > For thirty years, this status code did nothing.
